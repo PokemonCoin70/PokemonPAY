@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Pokemon
+Comment=Pokemon P2P Cryptocurrency
+Comment[fr]=Pokemon, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Pokemon, eşten eşe kriptografik sanal para birimi
+Exec=pokemon-qt %u
+Terminal=false
+Type=Application
+Icon=pokemon128
+MimeType=x-scheme-handler/pokemon;
+Categories=Office;Finance;

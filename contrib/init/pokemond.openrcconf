@@ -1,0 +1,33 @@
+# /etc/conf.d/pokemond: config file for /etc/init.d/pokemond
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/pokemon/pokemon.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/pokemond"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/pokemond.pid"
+
+# Where to write pokemond data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/pokemond"
+
+# User and group to own pokemond process
+#BITCOIND_USER="pokemon"
+#BITCOIND_GROUP="pokemon"
+
+# Path to pokemond executable
+#BITCOIND_BIN="/usr/bin/pokemond"
+
+# Nice value to run pokemond under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS="-disablewallet"
+
+# The timeout in seconds OpenRC will wait for bitcoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+BITCOIND_SIGTERM_TIMEOUT=60
